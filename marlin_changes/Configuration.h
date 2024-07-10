@@ -663,7 +663,7 @@
 
   #if ENABLED(DELTA_AUTO_CALIBRATION)
     // set the default number of probe points : n*n (1 -> 7)
-    #define DELTA_CALIBRATION_DEFAULT_POINTS  4
+    #define DELTA_CALIBRATION_DEFAULT_POINTS  3
   #endif
 
   #if ENABLED(DELTA_AUTO_CALIBRATION) || ENABLED(DELTA_CALIBRATION_MENU)
@@ -822,7 +822,7 @@
 #define XYZ_FULL_STEPS_PER_ROTATION 200
 #define XYZ_MICROSTEPS 16
 #define XYZ_BELT_PITCH 2
-#define XYZ_PULLEY_TEETH 14
+#define XYZ_PULLEY_TEETH 16
 //
 #define E_FULL_STEPS_PER_ROTATION 200
 #define E_MICROSTEPS 16
@@ -1351,7 +1351,7 @@
 
   // Set the number of grid points per dimension.
   // Works best with 5 or more points in each dimension.
-  #define GRID_MAX_POINTS_X 7
+  #define GRID_MAX_POINTS_X 3
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
