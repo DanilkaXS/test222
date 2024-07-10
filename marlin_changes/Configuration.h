@@ -663,7 +663,7 @@
 
   #if ENABLED(DELTA_AUTO_CALIBRATION)
     // set the default number of probe points : n*n (1 -> 7)
-    #define DELTA_CALIBRATION_DEFAULT_POINTS  3
+    #define DELTA_CALIBRATION_DEFAULT_POINTS  7
   #endif
 
   #if ENABLED(DELTA_AUTO_CALIBRATION) || ENABLED(DELTA_CALIBRATION_MENU)
@@ -1351,7 +1351,7 @@
 
   // Set the number of grid points per dimension.
   // Works best with 5 or more points in each dimension.
-  #define GRID_MAX_POINTS_X 3
+  #define GRID_MAX_POINTS_X 5
   #define GRID_MAX_POINTS_Y GRID_MAX_POINTS_X
 
   // Set the boundaries for probing (where the probe can reach).
@@ -1393,7 +1393,7 @@
   // Set Mesh bounds as an inset region of the bed
   #define MESH_INSET  1
   // Don't use more than 15 points per axis, implementation limited.
-  #define GRID_MAX_POINTS_X  7
+  #define GRID_MAX_POINTS_X  5
   #define GRID_MAX_POINTS_Y  GRID_MAX_POINTS_X
 
   // Sophisticated users prefer no movement of nozzle
@@ -1414,7 +1414,7 @@
   // Set Mesh bounds as an inset region of the bed
   #define MESH_INSET  10
   // Don't use more than 7 points per axis, implementation limited.
-  #define GRID_MAX_POINTS_X  3
+  #define GRID_MAX_POINTS_X  5
   #define GRID_MAX_POINTS_Y  GRID_MAX_POINTS_X
 
   // After homing all axes ('G28' or 'G28 XYZ') rest Z at Z_MIN_POS
